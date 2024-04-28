@@ -110,14 +110,14 @@ section{
     background: #E3ECF6;
 }
 .bg-head{
-    background: url(/img/head.png);
+    background: url(../img/head.png);
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
 }
 @media screen and (max-width:992px) {
     .bg-head {
-    background: url(/img/head.png);
+    background: url(../img/head.png);
     background-position: top;
     background-size: 100% 2%;
     background-repeat: no-repeat;
@@ -125,13 +125,13 @@ section{
 }
 
 .bg-sankaku{
-    background: url(/img/sankaku.png);
+    background: url(../img/sankaku.png);
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
 }
 .bg-banner1{
-    background: url(/img/banner1.png);
+    background: url(../img/banner1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
