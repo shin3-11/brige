@@ -1,0 +1,352 @@
+/* 文字 */
+h1{
+    color: #1957a0 !important;
+    letter-spacing: 5px !important;
+    line-height: 150% !important;
+    font-weight: bold !important;
+    margin-bottom: 5rem;
+    display: inline-block;
+    position: relative;
+    font-family: "dnp-shuei-mgothic-std", sans-serif;
+}
+h2{
+    color: #1957a0;
+    letter-spacing: 5px;
+    line-height: 150%;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+    font-family: "dnp-shuei-mgothic-std", sans-serif;
+}
+h3{
+    color: #1957a0;
+    letter-spacing: 2px;
+    line-height: 150%;
+    font-weight:bold;
+    font-family: "dnp-shuei-mgothic-std", sans-serif;
+}
+p{
+    letter-spacing: 1px;
+    line-height: 200%;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "dnp-shuei-mgothic-std", sans-serif;
+}
+a{
+    color: #1957a0;
+    font-weight: bold !important;
+    font-family: "dnp-shuei-mgothic-std", sans-serif;
+}
+
+/* その他文字 */
+.text-label-1{
+    background: #!important;
+    color: white!important;
+    display: block;
+    text-align: center;
+}
+.btn{
+    letter-spacing: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    border-radius: 50px;
+    color: #1957a0;
+    padding: 1rem 3rem;
+    border: solid #1957a0 5px;
+}
+.btn:hover {
+    color: #1957a0 !important;
+    background-color: var(--bs-btn-hover-bg);
+    border: solid #1957a0 5px;
+}
+
+/* 画像 */
+img {
+    height:auto;
+    width: 100%;
+}
+.cover{
+    object-fit: cover;
+}
+.aspect-1{
+    aspect-ratio: 1 / 1;
+}
+.aspect{
+    aspect-ratio: 4 / 3;
+}
+
+/* レイアウト */
+.row{
+    width: 100%;
+    margin: 0;
+}
+section{
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+/* レスポンシブ */
+@media screen and (max-width: 992px){
+    section{
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+.pw{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.mw{
+    max-width: 1500px;
+    margin: auto;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-1{
+    display: flex;
+    align-items: end;
+}
+.bottom-2{
+    display: flex;
+    align-items: end;
+    justify-content: end
+}
+
+/* 背景 */
+.bg-main{
+    background: #1957a0;
+}
+.bg-sub{
+    background: #E3ECF6;
+}
+.bg-head{
+    background: url(../img/head.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:992px) {
+    .bg-head {
+    background: url(../img/head.png);
+    background-position: top;
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+}
+
+.bg-sankaku{
+    background: url(../img/sankaku.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bg-banner1{
+    background: url(../img/banner1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-img{
+    background: url();
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* 装飾 */
+.d-shadow{
+    filter: drop-shadow(0px 0px 5px #ccc);
+}
+.circle-point{
+    border-radius: 50%;
+    border: #1957a0 solid 5px;
+    background-color: #fff;
+    top:-40px;
+    left: -20px;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    line-height:normal;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-point{
+    border-radius: 16px;
+    border: #1957a0 solid 5px;
+    background-color: #fff;
+    top:-40px;
+    left: -20px;
+    margin: 0;
+    line-height:normal;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 3%;
+}
+.under{
+    text-decoration: underline;
+}
+.border-main{
+    border: solid #1957a0 5px;
+}
+
+
+
+/* 追加 */
+.navbar-toggler{
+    border:none;
+}
+.slash{
+    position: relative;
+}
+.slash:after{
+    position: absolute;
+    content: "/";
+    right: 0;
+    top:20%;
+    color: #fff;
+}
+.text-main{
+    color: #1957a0;
+}
+@media screen and (max-width: 992px){
+    .p-mv{
+        padding: 0 !important;
+    }
+}
+span{
+    font-size: 1rem;
+    font-family: "dnp-shuei-mgothic-std", sans-serif;
+}
+th{
+    border: none;
+    font-family: "dnp-shuei-mgothic-std", sans-serif;
+}
+td{
+    border: none;
+    font-family: "dnp-shuei-mgothic-std", sans-serif;
+}
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+  top:0;
+    right: -120%;
+  width:100%;
+    height: 100vh;/*ナビの高さ*/
+  background:#1957a0;
+    /*動き*/
+  transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    right: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+  list-style: none;
+    text-align: center;
+}
+
+#g-nav li a{
+  color: #fff;
+  text-decoration: none;
+  padding:10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1{
+  position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+  top:10px;
+  right: 10px;
+  cursor: pointer;
+    width: 50px;
+    height:50px;
+}
+
+/*×に変化*/
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background-color: #fff;
+    width: 45%;
+  }
+
+.openbtn1 span:nth-of-type(1) {
+  top:15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+
+
+/* レスポンシブ */
+@media screen and (min-width: 992px){
+
+}
