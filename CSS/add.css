@@ -225,9 +225,11 @@ span{
 }
 th{
     border: none;
+    font-family: "dnp-shuei-mgothic-std", sans-serif;
 }
 td{
     border: none;
+    font-family: "dnp-shuei-mgothic-std", sans-serif;
 }
 
 /*========= ナビゲーションのためのCSS ===============*/
