@@ -149,6 +149,12 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.bg-banner2{
+    background: url(../img/banner2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .bg-img{
     background: url();
     background-position: top;
@@ -310,8 +316,9 @@ td{
     left: 14px;
     height: 3px;
     border-radius: 2px;
-  background-color: #fff;
+    background-color: #fff;
     width: 45%;
+    border: solid #1957a0 0.5px;
   }
 
 .openbtn1 span:nth-of-type(1) {
